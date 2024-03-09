@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
-import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Invoices from "./scenes/invoices";
 import Bar from "./scenes/bar";
@@ -29,7 +28,7 @@ function App() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={<Favouritecharts />} />
               <Route path="/favouritecharts" element={<Favouritecharts />} />
               <Route path="/favouritequeries" element={<Favouritequeries />} />
               <Route path="/team" element={<Team />} />
