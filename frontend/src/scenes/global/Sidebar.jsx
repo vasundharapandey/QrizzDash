@@ -47,18 +47,6 @@ const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
   const colorMode = useContext(ColorModeContext);
-  /*const fetchData = async () => {
-    try {
-      const response = await Axios.get("http://localhost:3001/api/values"); 
-      setValues(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-  useEffect(() => {
-    fetchData();
-    console.log(values);
-  },[]); */
   return (
     <Box
       sx={{
@@ -170,15 +158,8 @@ const Sidebar = () => {
            Recent
             </Typography>
             
-
-           
-            <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+<Box height={'220px'}/>
+        
             <div style={{ display: 'flex', flexDirection: 'column' }}>
              <Item
               title="Clear History"
